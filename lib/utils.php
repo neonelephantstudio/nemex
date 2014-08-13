@@ -10,3 +10,10 @@ function setFileMode($path) {
 	$success = @mkdir($path, CONFIG::FILE_CREATION_MODE);
 	umask($oldUmask);
 }
+
+// glob returns 'false' for empty directories on some 
+// PHP versions; fix it to always return an empty array.
+function saneGlob($path, $mode = null) {
+	$files = glob($path, $mode);
+	return empty($files) ? array() : $files;
+}

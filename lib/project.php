@@ -54,7 +54,7 @@ class Project {
 	}
 
 	public function getTitleImage() {
-		$images = glob($this->path.self::$titleImageGlob, GLOB_BRACE);
+		$images = saneGlob($this->path.self::$titleImageGlob, GLOB_BRACE);
 		if( !empty($images) ) {
 			rsort($images);	
 			return "url('".$this->path.basename($images[0])."')";
@@ -96,7 +96,7 @@ class Project {
 	}
 
 	protected function getFiles() {
-		$files = glob($this->path.self::$fileGlob, GLOB_BRACE);
+		$files = saneGlob($this->path.self::$fileGlob, GLOB_BRACE);
 		rsort($files);
 		return $files;
 	}
@@ -116,7 +116,7 @@ class Project {
 
 	public static function getProjectList() {
 		$projects = array();
-		foreach( glob(CONFIG::PROJECTS_PATH.'*', GLOB_ONLYDIR) as $dir ) {
+		foreach( saneGlob(CONFIG::PROJECTS_PATH.'*', GLOB_ONLYDIR) as $dir ) {
 			$project = self::open( basename($dir) );
 			if( $project ) { // Make sure the project could be opened
 				$projects[] = $project;
