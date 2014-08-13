@@ -1,9 +1,9 @@
-
 @media only screen and (max-width: 759px) {
 
 	.header {
 		display: none;
 	}
+
 
 	#editmenu{
 		position: absolute;
@@ -75,16 +75,16 @@
 
 	.project-list-item {
 		width: 100%;
-		height: 82px;
+		height:82px;
 		font: 27px/22px "AvenirNext-Medium";
-		color: #F4F4F4;
+		color:#F4F4F4;
 		text-align: left;
-		padding: 20px;
+		padding:20px;
 		background-repeat: no-repeat;
 		background-position: left center;
 		background: rgba(0, 0, 0, 0.45);
 		background-size: 100% auto;
-	}
+}
 
 	.node-amount {
 		font: 18px/32px "AvenirNext-Regular";
@@ -98,17 +98,18 @@
 	.item-info span {
 		font-size: 14px;
 	}
-	
+
+
 	.navigation {
 		top:auto;
 		bottom: 20px !important;
 		width: 100%;
 	}
 	
-	.index {
-		left: 38%;	
-		position: absolute;
-		bottom: 8px;
+.index {
+	left: 38%;	
+	position: absolute;
+	bottom: 8px;
 	}
 	
 	#markdownhelp {
@@ -155,7 +156,7 @@
 		margin-top: 30px;
 	}
 	.c3 {
-		padding: 0;
+		padding:0;
 		z-index: 2;
 		position: relative;
 		background-color: #fff;
@@ -245,7 +246,6 @@
 
 
 	#upload {
-		/* position: fixed; */
 		position: absolute;
 		overflow: hidden;
 		width:100%;

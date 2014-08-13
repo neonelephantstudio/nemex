@@ -23,34 +23,37 @@ a { text-decoration: none;}
 h1,h2,h3 {
 	font-weight: normal;
 	color: #c3c3c3;
+	text-align: left;
+	
 }
 
 h1 {
 	line-height: 1.2em;
-	margin-bottom: .25em;
+	margin-bottom: .5em;
 }
 
 h2 {
-	margin-bottom: .25em;
+	margin-bottom: .5em;
 	line-height: 1.25em;
 }
 
 p {
 	margin-bottom: 1.5em;
+	text-align: left;
 }
 
 .preloader{
 	display: none;
 }
 
+.no-projects-notice {
+	text-align: center;
+}
+
 #project { width:800px; margin: 0 auto; padding: 0; position: relative; margin-top: 150px; z-index: 1;
 	background-image: url('../img/line.png');
 	background-repeat: repeat-y;
 	background-position: top center;
-}
-
-.no-projects-notice {
-	text-align: center;
 }
 
 .row{
@@ -88,10 +91,8 @@ p {
 	margin: 0 auto;
 	width:400px;
 	float:left;
-	
 	display: none;
 	text-align: center;
-
 }
 
 .editform {
@@ -127,6 +128,12 @@ p {
 
 .itemId, .alignment, .activeProject {
 	display:none;
+}
+
+.header span {
+	background: #fff;
+	border-radius: 40px;
+	padding: 10px 10px;
 }
 
 button {padding: 5px; background-color: white;}
@@ -166,20 +173,20 @@ img {
 	background-color: #5EB9BA;
 	width:800px;
 	height:190px;
-	display: inline-block;
 	margin: 0px;
 	font: 48px/44px "AvenirNext-Regular", "Lucida Grande", Lucida, Verdana, sans-serif;
-	color: #F4F4F4;
+	color:#F4F4F4;
 	text-align: left;
-	padding: 55px;
-
+	padding:55px;
 	background-repeat: no-repeat;
 	background-position: left center;
 	background: rgba(0, 0, 0, 0.45);
 	background-size: 100% auto;
 }
 
-.last {margin-right: 0 !important;}
+.last {
+	margin-right: 0 !important;
+}
 
 .project-list-item:hover {
 	color: rgba(255,255,255,.3);
@@ -244,12 +251,20 @@ img {
 
 .content {
 	font: 25px/38px "AvenirNext-Regular", "Lucida Grande", Lucida, Verdana, sans-serif;
-	color: #646464;
+	color: #777575;
 	word-wrap: break-word;
 	resize: none;
 }
 
 .content ul {
+	text-align: left;
+	margin-bottom: .5em;
+	list-style-type: disc;
+}
+
+
+.content ul li {
+	margin-bottom: .25em;
 }
 
 .content a {
@@ -267,10 +282,11 @@ img {
 	margin: 24px auto;
 	width: 166px;
 	visibility: hidden;
+	
 }
 
 .actions.image {
-	width:107px;
+	width: 107px;
 	margin-top: 25px;
 	margin-bottom: 10px;
 }
