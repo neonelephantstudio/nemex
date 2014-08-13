@@ -4,7 +4,7 @@ class CONFIG {
 	const USER = 'nemex';
 	const PASSWORD = 'io';
 
-	const FILE_CREATION_MODE = 0666;
+	const FILE_CREATION_MODE = 0777;
 	const DATE_FORMAT = 'j. F Y';
 
 	const PROJECTS_PATH = 'projects/';
