@@ -1,0 +1,657 @@
+*, *:before, *:after {
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+* {
+	margin:0px;
+	padding: 0px;	
+}
+
+html, body {
+	height:100%; 
+	margin:0px;
+	padding: 0px;
+	font-family: "AvenirNext-Regular", "Lucida Grande", Lucida, Verdana, sans-serif;
+	
+	background: #fff;
+}
+
+
+
+a { text-decoration: none;}
+
+h1,h2,h3 {
+	font-weight: normal;
+	color: #c3c3c3;
+}
+
+h1 {
+	line-height: 1.2em;
+	margin-bottom: .25em;
+}
+
+h2 {
+	margin-bottom: .25em;
+	line-height: 1.25em;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+.preloader{
+	display: none;
+}
+
+#project { width:800px; margin: 0 auto; padding: 0; position: relative; margin-top: 150px; z-index: 1;
+	background-image: url('../img/line.png');
+	background-repeat: repeat-y;
+	background-position: top center;
+}
+
+.no-projects-notice {
+	text-align: center;
+}
+
+.row{
+	width:100%;
+	margin: 0;
+	margin-top: 68px;
+	padding: 0;
+	display: inline-block;
+	background-color: #fff;
+}
+
+#newMarkdown {
+	display:none;
+}
+
+.c3 {
+	width:100%;
+	padding: 16px 10px;
+	margin: 0 auto;
+	text-align: center;
+	-moz-user-select:none;
+	/* Safari */
+	-khtml-user-select: none;
+}
+
+.edit-mode {
+	float: left;
+	width:50%;
+	text-align: center;
+
+}
+
+.c3edit {
+	padding: 5px;
+	margin: 0 auto;
+	width:400px;
+	float:left;
+	
+	display: none;
+	text-align: center;
+
+}
+
+.editform {
+	display: none;
+	background-color: red;
+	width:460px;
+	float: left;
+}
+
+.editarea {
+	width:100%;
+	height:auto;
+	margin-top: 25px;
+}
+
+.editareafield {
+	outline: none !important;
+	width:100%;
+	height:auto;
+	margin-top: 39px;
+	background-color: rgba(0,0,0, 0.03);
+	margin-bottom: 25px;
+	text-align: left;
+
+	color: #343434;
+	font: 18px/38px "AndaleMono", "Courier", sans-serif;
+	padding: 15px;
+	border:none;
+	line-height: 1.4em;
+	resize: none;
+	-webkit-appearance:caret;
+}
+
+.itemId, .alignment, .activeProject {
+	display:none;
+}
+
+button {padding: 5px; background-color: white;}
+
+hr.vertical {
+	width: 0px;
+	height: 100%; /* or height in PX */
+} 
+
+img {
+	max-width: 100%; 
+}
+
+.header {
+	position: fixed;
+	width:100%;
+	height: 58px;
+	top:0;
+	text-align: center;
+	color: #EC3F1E;
+	z-index: 1000;
+	font: 24px/38px "AvenirNext-Medium", "Lucida Grande", Lucida, Verdana, sans-serif;
+	padding-top: 12px;
+/*	-webkit-filter: blur(5px);	*/
+
+}
+
+
+
+.project-list {
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.project-list-item {
+	background-color: #5EB9BA;
+	width:800px;
+	height:190px;
+	display: inline-block;
+	margin: 0px;
+	font: 48px/44px "AvenirNext-Regular", "Lucida Grande", Lucida, Verdana, sans-serif;
+	color: #F4F4F4;
+	text-align: left;
+	padding: 55px;
+
+	background-repeat: no-repeat;
+	background-position: left center;
+	background: rgba(0, 0, 0, 0.45);
+	background-size: 100% auto;
+}
+
+.last {margin-right: 0 !important;}
+
+.project-list-item:hover {
+	color: rgba(255,255,255,.3);
+	-webkit-transition: .1s ease-in-out;
+}
+
+.p_actions{
+	position: relative;
+	right: 10px;
+	float: left;
+	visibility: hidden;
+}
+
+.p_delete{
+	position: relative;
+	width:49px;
+	height:49px;
+	float:left;
+	background-size: 100% 100%;
+	background-image: url(../img/delete.svg);
+	opacity: .5;	
+}
+
+.p_download{
+	position: relative;
+	width:49px;
+	height:49px;
+	float:left;
+	background-size: 100% 100%;
+	background-image: url(../img/download.svg);
+	opacity: .5;
+	margin-right: 15px;
+}
+
+.item-info{
+	width:83%;
+	float:left;
+	font-family: "AvenirNext-Regular", "Lucida Grande", Lucida, Verdana, sans-serif;
+	line-height: 44px;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+
+.item-info span {
+	color: rgba(255,255,255,.6);
+	font-size: 22px;
+	text-transform: lowercase;
+}
+
+.node-amount {
+	font: 36px/40px "Georgia", "Times New Roman", Times, serif;
+	font-style: italic;
+}
+
+.date {
+	font: 16px/22px "AvenirNext-Regular";
+	color: rgba(156,156,156,0.45);
+	display: block;
+	text-transform: uppercase;
+	margin-bottom: 14px;
+}
+
+.content {
+	font: 25px/38px "AvenirNext-Regular", "Lucida Grande", Lucida, Verdana, sans-serif;
+	color: #646464;
+	word-wrap: break-word;
+	resize: none;
+}
+
+.content ul {
+}
+
+.content a {
+	color: #5EB9BA;
+	text-decoration: underline;
+}
+
+.content a:hover {
+	color: #646464;
+}
+
+.actions {
+	position: relative;
+	height:48px;
+	margin: 24px auto;
+	width: 166px;
+	visibility: hidden;
+}
+
+.actions.image {
+	width:107px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+.edit, .edit-big {
+	width:48px;
+	height:48px;
+	float:left;
+	background-size: 100% 100%;
+	background-image: url(../img/edit@2x.png);
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.edit::hover, .edit-big::hover {
+	background-image: url(../img/edit_hover@2x.png);
+}
+
+.delete {
+	width:48px;
+	height:48px;
+	float:left;
+	background-image: url(../img/cancel@2x.png);
+	background-size: 100% 100%;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.delete::hover {
+	background-image: url(../img/delete_hover@2x.png);
+}
+
+.download {
+	position: relative;
+	width:48px;
+	height:48px;
+	float:left;
+	background-size: 100% 100%;
+	background-image: url(../img/download_grey.svg);
+	opacity: .9;
+	cursor: pointer;
+}
+
+
+.delete-big {
+	width:48px;
+	height:48px;
+	float:left;
+	background-image: url(../img/cancel@2x.png);
+	background-size: 100% 100%;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.delete-big::hover {
+	background-image: url(../img/delete_hover@2x.png);
+}
+
+.download-big{
+	position: relative;
+	width:48px;
+	height:48px;
+	float:left;
+	background-size: 100% 100%;
+	background-image: url(../img/download_grey.svg);
+	opacity: .9;
+	cursor: pointer;
+}
+
+
+
+.save, .addPost {
+	width:48px;
+	height:48px;
+	background-image: url(../img/save@2x.png);
+	background-size: 100% 100%;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.backup {
+	display: none;
+}
+
+.discardUpdate {
+	width:48px;
+	height:48px;
+	background-image: url(../img/cancel_edit@2x.png);
+	background-size: 100% 100%;
+	cursor: pointer;
+	display: inline-block;
+}
+
+#newProject:focus {
+	outline: none;
+}
+
+#addProject {
+	background-image: url('../img/add.svg');    
+	background-size: 100% 100%;
+	width: 96px; 
+	height: 96px; 
+	margin: 80px auto 20px auto;
+	margin-bottom: 30px;
+	cursor: pointer;
+
+}
+
+#addProject:hover {
+	background-image: url('../img/add_hover.svg');  	
+}
+
+#uploadcircle {
+	position: absolute;
+	z-index:1;
+
+}
+
+#bubblediv {
+	display: none;
+	position: absolute;	
+	top: -2;
+	left:350;
+	z-index:1;
+}
+
+#pup {
+	display: none;
+}
+
+input[type=text] {
+	font-family: "AvenirNext-Regular", "Lucida Grande", Lucida, Verdana, sans-serif;
+	background: transparent;
+	border: 1px solid #d1d1d1;
+	height: 44px;
+	border-radius: 2px;
+	font-size: 16px;
+	padding: 0 0 0 12px;
+	font-weight: 300;
+	color: #000;
+	width: 280px;
+	margin-right: 10px;
+}
+
+.loginform input[type=text] {
+	color:#fff;
+}
+
+input[type=password] {
+
+	font-family: "AvenirNext-Regular", "Lucida Grande", Lucida, Verdana, sans-serif;
+	background: transparent;
+	border: 1px solid #d1d1d1;
+	height: 44px;
+	border-radius: 2px;
+	font-size: 16px;
+	padding: 0 0 0 12px;
+	font-weight: 300;
+	color: #fff;
+	width: 280px;
+	margin-right: 10px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+::-webkit-input-placeholder {
+	font-family: "AvenirNext-Regular", "Lucida Grande", Lucida, Verdana, sans-serif;
+	font-weight: 400;
+	color: #d1d1d1;
+}
+
+button {	
+	border: none;
+	border-radius: 2px;
+	height: 44px;
+	font-size: 16px;
+	color: #fff;
+	padding: 0 16px;
+	font-family: "AvenirNext-Regular", "Lucida Grande", Lucida, Verdana, sans-serif;
+	font-weight: 400;
+	background-image: url('../img/ok_m@2x.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	margin-top: 25px;
+	cursor: pointer;
+}
+
+.addProjectForm {
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 30px;
+	display:none;
+}
+
+.rotate {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.navigation {
+	position: fixed;
+	top:10px;
+	z-index: 1003;
+	left: 22px;
+	width: 96%;
+}
+
+.navigation img {
+	height: 44px;
+}
+
+#markdownhelp {
+	float: right;
+	margin-right: 1em;
+}
+
+#logout {
+	float: right;
+	margin-right: 20px;
+}
+
+#holder {
+	background-color: #fff; 
+	background-image: url('../img/add.svg');    
+	background-size: 100% 100%;
+	width: 96px; 
+	height: 96px; 
+	margin: 20px auto;
+}
+
+#holder:hover {
+	background-image: url('../img/add_hover.svg');  	
+	cursor: pointer;
+}
+
+#holder img {
+	height:100%;
+	width:100%;
+	border-radius: 50%;
+	display: block;
+}
+
+#holder.hover { border: 2px dashed #5EB9BA; }
+
+#holder img { display: block; margin: 10px auto; }
+
+#holder p { margin: 10px; font-size: 14px; }
+
+progress { position:fixed; top: 0px; width: 100%; appearance: none;height:5px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background-color: #fff;
+	/* gets rid of default border in Firefox and Opera. */ 
+	border: none;
+	color: #5EB9BA;
+
+}
+
+progress:after {  }
+
+progress,                          /* Firefox  */ 
+progress[role][aria-valuenow] {    /* Polyfill */
+	background: #fff !important; /* !important is needed by the polyfill */
+}
+
+/* Chrome */
+progress::-webkit-progress-bar {
+	background: #fff;
+}
+/* Firefox */
+progress::-moz-progress-bar { 
+	background: #5EB9BA;	
+}
+
+/* Chrome */
+progress::-webkit-progress-value {
+	background: #5EB9BA;
+}
+
+/* Polyfill */
+progress[aria-valuenow]:before  {
+	background: #5EB9BA;
+}
+
+.fail { background: #c00; padding: 2px; color: #fff; }
+
+.hidden { display: none !important;}
+
+#upload{display: none;}
+
+.snap-drawers { display: none;}
+
+::selection {
+	background: #5EB9BA;
+	color: #fff;
+}
+
+pre {
+	text-align: left;
+	font-size: 14px;
+}
+
+#mdhelp{
+	position: fixed;
+	top: 0;
+	left: 10%;
+	display: none;
+	width:80%;
+	height:100%;
+	background-color: #E7E7E7;
+	z-index: 1004;
+	font: 18px/38px "AndaleMono", "Courier", sans-serif;
+}
+
+div.login {
+	background: transparent url('../img/nemex_landing_bg.jpg') center center no-repeat fixed;
+	background-size: cover;
+	min-width:100%;
+	min-height:100%;
+	color: #fff;
+	font: 24px/38px "Avenir Next";
+}
+
+.login-header {
+	width:100%;
+	height: 200px;
+	top:0;
+	text-align: center;
+	color: #EC3F1E;
+	z-index: 1000;
+	font: 24px/38px "AvenirNext-Medium";
+	padding-top: 80px;
+	margin-bottom: 50px;
+	background: transparent;
+
+}
+
+body.login .login-header {
+	color: #fff;
+}
+
+.loginform {
+	position: relative;
+	margin: 20px auto;
+	text-align: center;
+}
+
+input[type=submit] {
+	background: #EC3F1E;
+	font-family: "AvenirNext-Regular", "Lucida Grande", Lucida, Verdana, sans-serif;
+	border: 1px solid #EC3F1E;
+	height: 44px;
+	border-radius: 2px;
+	font-size: 16px;
+	font-weight: 300;
+	color: #fff;
+	width: 280px;
+	margin-right: 10px;
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+
+footer {
+	margin-top: 200px;
+	display: block;
+}
+
+footer p {
+	font-size: 12px;
+	width: 20%;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 1.25em;
+	
+}
+
+footer p a {
+	color: #fff;
+}

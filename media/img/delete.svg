@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="49px" viewBox="0 0 50 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <title>delete_grey</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="buttons/elemente" sketch:type="MSArtboardGroup" transform="translate(-215.000000, -151.000000)" fill="#E7E7E7">
+            <path d="M237.586428,175.531002 L230.5,182.54198 L233.083141,185 L240.023902,177.920813 L247.244275,185 L249.5,182.72 L242.377217,175.520564 L249.5,168.255725 L247.22,166 L240.012681,173.130581 L232.95802,166 L230.5,168.583141 L237.586428,175.531002 Z M240,200 C253.530977,200 264.5,189.030977 264.5,175.5 C264.5,161.969023 253.530977,151 240,151 C226.469023,151 215.5,161.969023 215.5,175.5 C215.5,189.030977 226.469023,200 240,200 Z" id="delete_grey" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

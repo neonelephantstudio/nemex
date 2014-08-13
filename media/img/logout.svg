@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="49px" height="49px" viewBox="0 0 49 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <title>logout</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Landscape" sketch:type="MSArtboardGroup" transform="translate(-622.000000, -268.000000)">
+            <g id="logout" sketch:type="MSLayerGroup" transform="translate(622.000000, 268.000000)">
+                <path d="M24.5,49 C38.030977,49 49,38.030977 49,24.5 C49,10.969023 38.030977,0 24.5,0 C10.969023,0 0,10.969023 0,24.5 C0,38.030977 10.969023,49 24.5,49 Z" id="back" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <circle id="Oval-7" stroke="#F25627" stroke-width="3" sketch:type="MSShapeGroup" cx="24.5" cy="24.5" r="8.5"></circle>
+                <rect id="Rectangle-3" fill="#FFFFFF" sketch:type="MSShapeGroup" x="20" y="13" width="9" height="9"></rect>
+                <rect id="Rectangle-4" fill="#F25627" sketch:type="MSShapeGroup" x="23" y="13" width="3" height="13"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

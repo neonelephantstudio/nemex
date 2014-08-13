@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <title>add_hover</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="übersicht" sketch:type="MSArtboardGroup" transform="translate(-678.000000, -130.000000)" fill="#EAE7E7">
+            <g id="add_hover" sketch:type="MSLayerGroup" transform="translate(678.000000, 130.000000)">
+                <path d="M46.4,46.4 L46.4,24 L51.2,24 L51.2,46.4 L72,46.4 L72,51.2 L51.2,51.2 L51.2,72 L46.4,72 L46.4,51.2 L24,51.2 L24,46.4 L46.4,46.4 Z M48,96 C74.5096693,96 96,74.5096693 96,48 C96,21.4903307 74.5096693,0 48,0 C21.4903307,0 0,21.4903307 0,48 C0,74.5096693 21.4903307,96 48,96 Z" id="row-insert-3" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
