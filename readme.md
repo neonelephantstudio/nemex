@@ -1,6 +1,8 @@
 ## To-Do
 - [ ] [Image compression and caching](http://nielse63.github.io/php-image-cache/)
-- [ ] Multiple file uploads
+- [ ] Lazy load images
+- [ ] [Multiple file uploads](http://davidwalsh.name/multiple-file-upload)
+- [ ] Allow view only user creation
 - [ ] Project descriptions (max 72 chars)
 - [ ] Sassify the css for easier customizaion (ideally font, accent color, that's it.)
 
