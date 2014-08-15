@@ -1,4 +1,8 @@
-## nemex
+## To-Do
+- [ ] [Image compression and caching](http://nielse63.github.io/php-image-cache/)
+- [ ] Multiple file uploads
+- [ ] Project descriptions (max 72 chars)
+- [ ] Sassify the css for easier customizaion (ideally font, accent color, that's it.)
 
 This is the official repository for nemex – a tiny app that helps you to track and curate ideas and projects. It’s self-hosted and based on markdown.
 
