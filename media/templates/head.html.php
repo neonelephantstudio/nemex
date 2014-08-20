@@ -17,13 +17,6 @@
 <body>
 <div id="mdhelp">
 	<h1>markdown help</h1>
-	headlines: # headline1 ## headline2 ...<br/>
-	code: `nemex` (backticks)<br />
-	link: [nemex io](http://www.nemex.io "optional title")<br/>
-	italic text: *nemex* or _nemex_<br />
-	bold text: **nemex** or __nemex__<br />
-	unordered list: * item1 (a space between * and text)<br/>	
-	ordered list: 1. item (a space between . and text)
 	<table cellspacing="0">
 		<thead>
 <tr>
