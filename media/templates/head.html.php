@@ -19,7 +19,119 @@
 	<h1>markdown help</h1>
 	headlines: # headline1 ## headline2 ...<br/>
 	code: `nemex` (backticks)<br />
-	link: [nemex io](http://www.nemex.io)<br/>
-	bold text: *nemex* or _nemex_<br />
-	italic text: **nemex** or __nemex__<br />
+	link: [nemex io](http://www.nemex.io "optional title")<br/>
+	italic text: *nemex* or _nemex_<br />
+	bold text: **nemex** or __nemex__<br />
+	unordered list: * item1 (a space between * and text)<br/>	
+	ordered list: 1. item (a space between . and text)
+	<table cellspacing="0">
+		<thead>
+<tr>
+<th>
+name
+</th>
+<th>
+syntax
+</th>
+<th>
+alternative
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+headlines
+</td>
+<td>
+#header1<br/>##header2<br/>…<br/>######header6
+</td>
+<td>
+header1<br/>
+======= (at leas 2 = signs)<br/>
+header2<br/>
+------- (at least 2 - signs)
+</td>
+</tr>
+<tr>
+<td>
+code
+</td>
+<td>
+`code`
+</td>
+<td>
+for multilines code, put a tab char in front of each lines
+</td>
+</tr>
+<tr>
+<td>
+link
+</td>
+<td>
+[alt text](http://link.com "optional title")
+</td>
+</tr>
+<tr>
+<td>
+image
+</td>
+<td>
+![alt text](http://link.com/image.jpg) "optional title")
+</td>
+</tr>
+<tr>
+<td>
+bold text
+</td>
+<td>
+**text**
+</td>
+<td>
+__text__ (double _)
+</td>
+</tr>
+<tr>
+<td>
+italic text
+</td>
+<td>
+*text*
+</td>
+<td>
+_text_ (simple _)
+</td>
+</tr>
+<tr>
+<td>
+unordered list
+</td>
+<td>
+* item1<br/>
+* item2<br/>
+* …<br/>
+* itemN<br/>
+(the space between * and text is important)
+</td>
+<td>
+- 4 item1<br/>
+- item2<br/>
+- …<br/>
+- itemN
+</td>
+</tr>
+<tr>
+<td>
+ordered list
+</td>
+<td>
+1. item1<br/>
+2. item2<br/>
+3. …<br/>
+N. itemN<br/>
+(note that the number isn't important it will always be corrected)
+</td>
+</tr>
+</tbody>
+	</table>
 </div>
