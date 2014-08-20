@@ -18,10 +18,13 @@
 <style>
 tr td{ 
 border-bottom: 1px solid #B4B5B0; 
+font-size:0.9em;
+line-height:normal;
 }
 </style>
 <div id="mdhelp" style="overflow:auto;">
 	<h1>markdown help</h1>
+<div>for more information, go to <a href="http://en.wikipedia.org/wiki/Markdown">http://en.wikipedia.org/wiki/Markdown</a></div>
 	<table cellspacing="0">
 		<thead>
 <tr>
@@ -69,6 +72,8 @@ link
 <td>
 [alt text](http://link.com "optional title")
 </td>
+<td>
+</td>
 </tr>
 <tr>
 <td>
@@ -77,6 +82,7 @@ image
 <td>
 ![alt text](http://link.com/image.jpg) "optional title")
 </td>
+<td></td>
 </tr>
 <tr>
 <td>
@@ -88,8 +94,7 @@ bold text
 <td>
 __text__ (double _)
 </td>
-</tr>
-<tr>
+</tr> <tr>
 <td>
 italic text
 </td>
@@ -99,8 +104,7 @@ italic text
 <td>
 _text_ (simple _)
 </td>
-</tr>
-<tr>
+</tr> <tr>
 <td>
 unordered list
 </td>
@@ -129,6 +133,7 @@ ordered list
 N. itemN<br/>
 (note that the number isn't important it will always be corrected)
 </td>
+<td> </td>
 </tr>
 </tbody>
 	</table>
