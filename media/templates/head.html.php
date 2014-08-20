@@ -20,9 +20,9 @@ tr td{
 border-bottom: 1px solid #B4B5B0; 
 }
 </style>
-<div id="mdhelp" overflow="auto">
+<div id="mdhelp" style="overflow:auto;">
 	<h1>markdown help</h1>
-	<table cellspacing="0" style="border:1px solid black">
+	<table cellspacing="0">
 		<thead>
 <tr>
 <th>
