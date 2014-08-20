@@ -541,9 +541,11 @@ button {
 #holder p { margin: 10px; font-size: 14px; }
 
 progress { position:fixed; top: 0px; width: 100%; appearance: none;height:5px;
+	z-index:10;
 	-moz-appearance: none;
 	-webkit-appearance: none;
-	background-color: #fff;
+	background-color: rgba(255,255,255,0);
+/*	background-color: #fff;
 	/* gets rid of default border in Firefox and Opera. */ 
 	border: none;
 	color: #5EB9BA;
@@ -554,12 +556,14 @@ progress:after {  }
 
 progress,                          /* Firefox  */ 
 progress[role][aria-valuenow] {    /* Polyfill */
-	background: #fff !important; /* !important is needed by the polyfill */
+/*	background: #fff !important; /* !important is needed by the polyfill */
+	background-color: rgba(255,255,255,0) !important;
 }
 
 /* Chrome */
 progress::-webkit-progress-bar {
-	background: #fff;
+	/*background: #fff;*/
+	background-color: rgba(255,255,255,0);
 }
 /* Firefox */
 progress::-moz-progress-bar { 
