@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>nemex.io</title>
+	<title><?= CONFIG::SITENAME ?></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -15,11 +15,126 @@
 </head>
 
 <body>
-<div id="mdhelp">
+<style>
+tr td{ 
+border-bottom: 1px solid #B4B5B0; 
+font-size:0.9em;
+line-height:normal;
+}
+</style>
+<div id="mdhelp" style="overflow:auto;">
 	<h1>markdown help</h1>
-	headlines: # headline1 ## headline2 ...<br/>
-	code: `nemex` (backticks)<br />
-	link: [nemex io](http://www.nemex.io)<br/>
-	bold text: *nemex* or _nemex_<br />
-	italic text: **nemex** or __nemex__<br />
+<div>for more information, go to <a href="http://en.wikipedia.org/wiki/Markdown">http://en.wikipedia.org/wiki/Markdown</a></div>
+	<table cellspacing="0">
+		<thead>
+<tr>
+<th>
+name
+</th>
+<th>
+syntax
+</th>
+<th>
+alternative
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+headlines
+</td>
+<td>
+#header1<br/>##header2<br/>…<br/>######header6
+</td>
+<td>
+header1<br/>
+======= (at least 2 = signs)<br/>
+header2<br/>
+------- (at least 2 - signs)
+</td>
+</tr>
+<tr>
+<td>
+code
+</td>
+<td>
+`code`
+</td>
+<td>
+for multilines code, put a tab char in front of each lines
+</td>
+</tr>
+<tr>
+<td>
+link
+</td>
+<td>
+[alt text](http://link.com "optional title")
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+image
+</td>
+<td>
+![alt text](http://link.com/image.jpg) "optional title")
+</td>
+<td></td>
+</tr>
+<tr>
+<td>
+bold text
+</td>
+<td>
+**text**
+</td>
+<td>
+__text__ (double _)
+</td>
+</tr> <tr>
+<td>
+italic text
+</td>
+<td>
+*text*
+</td>
+<td>
+_text_ (simple _)
+</td>
+</tr> <tr>
+<td>
+unordered list
+</td>
+<td>
+* item1<br/>
+* item2<br/>
+* …<br/>
+* itemN<br/>
+(the space between * and text is important)
+</td>
+<td>
+- 4 item1<br/>
+- item2<br/>
+- …<br/>
+- itemN
+</td>
+</tr>
+<tr>
+<td>
+ordered list
+</td>
+<td>
+1. item1<br/>
+2. item2<br/>
+3. …<br/>
+N. itemN<br/>
+(note that the number isn't important it will always be corrected)
+</td>
+<td> </td>
+</tr>
+</tbody>
+	</table>
 </div>
