@@ -541,6 +541,7 @@ button {
 #holder p { margin: 10px; font-size: 14px; }
 
 progress { position:fixed; top: 0px; width: 100%; appearance: none;height:5px;
+	z-index:10;
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	background-color: #fff;
