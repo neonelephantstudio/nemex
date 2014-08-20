@@ -3,6 +3,7 @@
 class CONFIG {
 	const USER = 'nemex';
 	const PASSWORD = 'io';
+	const SITENAME = 'nemex';
 
 	const FILE_CREATION_MODE = 0777;
 	const DATE_FORMAT = 'j. F Y';

@@ -1,6 +1,6 @@
 <?php include(NX_PATH.'media/templates/head.html.php'); ?>
 
-<div class="header">NEMEX</div>
+<div class="header"><?= strtoupper(CONFIG::SITENAME) ?></div>
 
 <div class="project-list">
 	<div id="addProject"></div>
