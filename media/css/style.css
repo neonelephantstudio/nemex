@@ -74,16 +74,12 @@ p {
 	padding: 16px 10px;
 	margin: 0 auto;
 	text-align: center;
-	-moz-user-select:none;
-	/* Safari */
-	-khtml-user-select: none;
 }
 
 .edit-mode {
 	float: left;
 	width:50%;
 	text-align: center;
-
 }
 
 .c3edit {
