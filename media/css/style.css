@@ -1,8 +1,8 @@
-*, *:before, *:after {
-	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
 
 * {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 	margin:0px;
 	padding: 0px;	
 }
@@ -12,19 +12,17 @@ html, body {
 	margin:0px;
 	padding: 0px;
 	font-family: "AvenirNext-Regular", "Lucida Grande", Lucida, Verdana, sans-serif;
-	
 	background: #fff;
 }
 
+a {
+	text-decoration: none;
+}
 
-
-a { text-decoration: none;}
-
-h1,h2,h3 {
+h1, h2, h3 {
 	font-weight: normal;
 	color: #c3c3c3;
 	text-align: left;
-	
 }
 
 h1 {
@@ -50,7 +48,13 @@ p {
 	text-align: center;
 }
 
-#project { width:800px; margin: 0 auto; padding: 0; position: relative; margin-top: 150px; z-index: 1;
+#project { 
+	width: 800px; 
+	margin: 0 auto; 
+	padding: 0; position: 
+	relative; 
+	margin-top: 150px; 
+	z-index: 1;
 	background-image: url('../img/line.png');
 	background-repeat: repeat-y;
 	background-position: top center;
@@ -132,7 +136,10 @@ p {
 	padding: 10px 10px;
 }
 
-button {padding: 5px; background-color: white;}
+button {
+	padding: 5px; 
+	background-color: #fff;
+}
 
 hr.vertical {
 	width: 0px;
@@ -153,8 +160,6 @@ img {
 	z-index: 1000;
 	font: 24px/38px "AvenirNext-Medium", "Lucida Grande", Lucida, Verdana, sans-serif;
 	padding-top: 12px;
-/*	-webkit-filter: blur(5px);	*/
-
 }
 
 
@@ -530,23 +535,29 @@ button {
 	display: block;
 }
 
-#holder.hover { border: 2px dashed #5EB9BA; }
+#holder.hover {
+	border: 2px dashed #5EB9BA;
+}
 
-#holder img { display: block; margin: 10px auto; }
+#holder img {
+	display: block; 
+	margin: 10px auto;
+}
 
-#holder p { margin: 10px; font-size: 14px; }
+#holder p {
+	margin: 10px; 
+	font-size: 14px;
+}
 
-progress { position:fixed; top: 0px; width: 100%; appearance: none;height:5px;
+progress {
+	position:fixed; top: 0px; width: 100%; appearance: none;height:5px;
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	background-color: #fff;
 	/* gets rid of default border in Firefox and Opera. */ 
 	border: none;
 	color: #5EB9BA;
-
 }
-
-progress:after {  }
 
 progress,                          /* Firefox  */ 
 progress[role][aria-valuenow] {    /* Polyfill */
@@ -667,3 +678,4 @@ footer p {
 footer p a {
 	color: #fff;
 }
+
