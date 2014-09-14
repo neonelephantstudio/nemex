@@ -17,7 +17,9 @@ class Image {
 		if( $this->type == IMAGETYPE_JPEG ) {
 			$this->image = imageCreateFromJPEG( $path );
 			$this->extension = 'jpg';
-			$this->exif = exif_read_data( $path );
+			if( function_exists('exif_read_data') ) {
+				$this->exif = exif_read_data( $path );
+			}
 			$this->rotateToExifOrientation();
 		} 
 		else if( $this->type == IMAGETYPE_PNG ) {
