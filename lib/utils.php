@@ -7,7 +7,7 @@ function p($s) {
 
 function setFileMode($path) {
 	$oldUmask = umask(0);
-	$success = @mkdir($path, CONFIG::FILE_CREATION_MODE);
+	$success = @chmod($path, CONFIG::FILE_CREATION_MODE);
 	umask($oldUmask);
 }
 

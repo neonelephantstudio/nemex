@@ -23,7 +23,7 @@ class Project {
 		setFileMode($path.CONFIG::IMAGE_BIG_PATH);
 		
 		file_put_contents($path.'index.php', self::$dirProtectIndex);
-		setFileMode($path.'index.php', self::$dirProtectIndex);
+		setFileMode($path.'index.php');
 
 		return Project::open($name);
 	}
