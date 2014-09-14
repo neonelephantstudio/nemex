@@ -7,7 +7,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<link rel="stylesheet" type="text/css" href="media/css/style.css">
-	<link rel="stylesheet" type="text/css" href="media/css/style-res.css">
+	<link rel="stylesheet" type="text/css" href="media/css/style-res.css" media="screen and (max-width: 759px)">
 	<link rel="apple-touch-icon" sizes="76x76" href="media/img/touch-icon-ipad.png">
 	<link rel="apple-touch-icon" sizes="120x120" href="media/img/touch-icon-iphone-retina.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="media/img/touch-icon-ipad-retina.png">
