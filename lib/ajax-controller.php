@@ -29,7 +29,7 @@ class AjaxController {
 	public function downloadProject() {
 		$project = Project::open($_GET['downloadProject']);
 		if( $project ) {
-			$zipPath = NX_PATH.$project->getPath().'project-all.temp.zip';
+			$zipPath = $project->getPath().'project-all.temp.zip';
 			$project->createZIP($zipPath);
 			header("Content-type: application/zip"); 
 			header("Content-Disposition: attachment; filename=".$project->getName().".zip");
