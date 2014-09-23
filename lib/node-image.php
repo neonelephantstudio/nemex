@@ -67,10 +67,6 @@ class NodeImage extends Node {
 			: $this->path;
 	}
 
-	public function getOriginalName() {
-
-	}
-
 	public function delete() {
 		$bigPath = $this->getBigPathName();
 		if( file_exists($bigPath) ) {
