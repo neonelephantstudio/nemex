@@ -100,7 +100,7 @@ class Image {
 	protected function rotateToExifOrientation() {
 		if( !$this->exif || empty($this->exif['Orientation']) ) {
 			// No Exif Orientation; nothing to do, return original.
-			return $source;
+			return;
 		}
 
 		$flip = false;
