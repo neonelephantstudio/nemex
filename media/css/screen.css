@@ -46,6 +46,8 @@ p {
 
 .no-projects-notice {
 	text-align: center;
+	margin: 0 auto;
+	width: 600px;
 }
 
 #project { 

@@ -35,11 +35,8 @@
 
 	<?php if( empty($projects) ) { ?> 
 		<div class="content no-projects-notice">
-			<h1>Hello World!</h1>
-			<p>
-				Here you can create new projects and collections.<br/>
-				Inside of a project you can write, edit and delete texts<br/>
-				or drag and drop some images to upload them.
+			<h1>Welcome to your nemex!</h1>
+			<p>Get started and create a new project with the + Button above. You can upload images, create texts, edit and delete them and download the whole project as a single zip-file.
 			</p>
 		</div>
 	<?php } ?>
