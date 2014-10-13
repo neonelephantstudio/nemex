@@ -506,9 +506,52 @@ button {
 	height: 44px;
 }
 
-#markdownhelp {
+.shareUi {
 	float: right;
 	margin-right: 1em;
+}
+
+#shareProject {
+	background: transparent url('../img/unshared.svg') top left no-repeat;
+	float: right;
+	height: 26px;
+	width: 22px;
+	padding: 4px 0 8px 32px;
+	overflow: hidden;
+	display: block;
+	-webkit-transition: width .25s ease-in-out;
+	white-space: nowrap;
+	
+}
+
+#shareProject:hover {
+	background: transparent url('../img/shared.svg') top left no-repeat;
+	width: 220px;
+}
+
+#unshareProject {
+	background: transparent url('../img/shared.svg') top left no-repeat;
+	float: right;
+	height: 26px;
+	width: 22px;
+	padding: 4px 0 8px 32px;
+	overflow: hidden;
+	display: block;
+	-webkit-transition: width .25s ease-in-out;
+	white-space: nowrap;
+	
+}
+
+#unshareProject:hover {
+	background: transparent url('../img/unshared.svg') top left no-repeat;
+	width: 100px;
+	
+}
+
+
+.publicUrl {
+	float: right;
+	padding: 4px 0 8px 18px;
 }
 
 #logout {

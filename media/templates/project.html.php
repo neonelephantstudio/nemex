@@ -2,22 +2,25 @@
 
 <div class="header">
 	<span><?php p($project->getName());?></span>
+		
 </div>
 
 <div id="editmenu"></div>
 <div class="navigation">
 	<a class="index" href="?"><img src="media/img/nemex.svg" /></a>
-	<a id="markdownhelp"><img src="media/img/markdown.svg" /></a>
+	<span class="share_project">	
+		<?php if($project->isShared()) {?>
+			
+			<a class="publicUrl" href="?<?php p($project->getName().'&'.$project->getSharekey());?>">
+				public url
+			</a>
+			<a href="#" id="unshareProject">unshare</a>
+		<?php } else { ?>
+			<a href="#" id="shareProject">Generate shareable link</a>
+		<?php } ?>
+	</span>
 
-	<?php if($project->isShared()) {?>
-		shared as
-		<a href="?<?php p($project->getName().'&'.$project->getSharekey());?>">
-			?<?php p($project->getName().'&'.$project->getSharekey());?>
-		</a>
-		(<a href="#" id="unshareProject">unshare</a>)
-	<?php } else { ?>
-		<a href="#" id="shareProject">share</a>
-	<?php } ?>
+	
 </div>
 		
 <progress id="uploadprogress" min="0" max="100" value="0" >0</progress>
