@@ -12,7 +12,6 @@ class Project {
 
 	protected $name = null;
 	protected $sharekey = null;
-	protected $writeable = true;
 
 	public static function create($name) {
 		$path = self::sanitizePath($name);
@@ -43,7 +42,6 @@ class Project {
 
 		// Make sure the project is shared and the sharekey matches
 		if( $project && $project->isShared() && $project->getSharekey() == $sharekey ) {
-			$project->writeable = true;
 			return $project;
 		}
 		return null;
@@ -87,10 +85,6 @@ class Project {
 
 		rmdir($this->path.CONFIG::IMAGE_BIG_PATH);
 		rmdir($this->path);
-	}
-
-	public function isWriteable() {
-		return $this->writeable;
 	}
 
 	public function isShared() {
