@@ -18,8 +18,22 @@ if( !empty($_POST['username']) && !empty($_POST['password']) ) {
 	}
 }
 
-// Not authed for this nemex? Show login form
+// Not authed for this nemex? Maybe we have a sharekey for the project?
+// If not, just show the login form
 if( !$session->isAuthed() ) {
+	if( count($_GET) == 2 ) {
+		$get = array_keys($_GET);
+		$projectName = $get[0];
+		$sharekey = $get[1];
+
+		$project = Project::openWithSharekey($projectName, $sharekey);
+		if( $project ) {
+			$nodes = $project->getNodes();
+			include( NX_PATH.'media/templates/project-readonly.html.php');
+			exit();
+		}
+	}
+
 	include( NX_PATH.'media/templates/login.html.php');
 }
 

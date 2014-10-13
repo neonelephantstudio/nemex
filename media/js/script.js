@@ -165,6 +165,24 @@ $(document).ready(function(){
 		$('#mdhelp').slideToggle();
 	});
 
+	// share
+	$('#shareProject').click(function(){
+		var project = $('.activeProject').text();
+		nemexApi('shareProject', {project:project}, function(response){
+			location.reload();
+		});
+		return false;
+	});
+
+	// unshare
+	$('#unshareProject').click(function(){
+		var project = $('.activeProject').text();
+		nemexApi('unshareProject', {project:project}, function(response){
+			location.reload();
+		});
+		return false;
+	});
+
 	// download node
 	$('.download-big').click(function(){
 		var nodeName = $(this).parents('.row').data('name');

@@ -8,6 +8,16 @@
 <div class="navigation">
 	<a class="index" href="?"><img src="media/img/nemex.svg" /></a>
 	<a id="markdownhelp"><img src="media/img/markdown.svg" /></a>
+
+	<?php if($project->isShared()) {?>
+		shared as
+		<a href="?<?php p($project->getName().'&'.$project->getSharekey());?>">
+			?<?php p($project->getName().'&'.$project->getSharekey());?>
+		</a>
+		(<a href="#" id="unshareProject">unshare</a>)
+	<?php } else { ?>
+		<a href="#" id="shareProject">share</a>
+	<?php } ?>
 </div>
 		
 <progress id="uploadprogress" min="0" max="100" value="0" >0</progress>

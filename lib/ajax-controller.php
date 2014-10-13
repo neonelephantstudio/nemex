@@ -82,5 +82,16 @@ class AjaxController {
 			$node = NodeImage::createFromUpload($project->getPath(), $file['tmp_name']);
 		}
 	}
+
+	public function shareProject() {
+		$project = Project::open($_POST['project']);
+		$key = $project->createSharekey();
+		$this->response['sharekey'] = $key;
+	}
+
+	public function unshareProject() {
+		$project = Project::open($_POST['project']);
+		$project->removeSharekey();
+	}
 }
 

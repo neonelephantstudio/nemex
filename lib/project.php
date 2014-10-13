@@ -8,8 +8,11 @@ class Project {
 	protected static $dirProtectIndex = '<?php header( "HTTP/1.1 403 forbidden" );';
 	protected static $fileGlob = '*.{md,jpg,jpeg,png,gif}';
 	protected static $titleImageGlob = '*.{jpg,jpeg,png,gif}';
+	protected static $sharekeyGlob = '*.sharekey';
 
 	protected $name = null;
+	protected $sharekey = null;
+	protected $writeable = true;
 
 	public static function create($name) {
 		$path = self::sanitizePath($name);
@@ -33,6 +36,17 @@ class Project {
 		return is_dir($path)
 			? new Project($path)
 			: null;
+	}
+
+	public static function openWithSharekey($name, $sharekey) {
+		$project = self::open($name);
+
+		// Make sure the project is shared and the sharekey matches
+		if( $project && $project->isShared() && $project->getSharekey() == $sharekey ) {
+			$project->writeable = true;
+			return $project;
+		}
+		return null;
 	}
 
 	protected function __construct($path) {
@@ -69,8 +83,53 @@ class Project {
 			$node->delete();
 		}
 		unlink($this->path.'index.php');
+		$this->removeSharekey();
+
 		rmdir($this->path.CONFIG::IMAGE_BIG_PATH);
 		rmdir($this->path);
+	}
+
+	public function isWriteable() {
+		return $this->writeable;
+	}
+
+	public function isShared() {
+		$key = $this->getSharekey();
+		return !empty($key);
+	}
+
+	public function getSharekey() {
+		// Load sharekey if we didn't have one already
+		if( empty($this->sharekey) ) {
+			$sharekeys = saneGlob($this->path.self::$sharekeyGlob, GLOB_BRACE);
+			if( !empty($sharekeys) && preg_match('/(\w{32})\.sharekey$/', $sharekeys[0], $match) ) {
+				$this->sharekey = $match[1];
+			}	
+		}
+
+		return $this->sharekey;
+	}
+
+	public function removeSharekey() {
+		$key = $this->getSharekey();
+		if( !empty($key) ) {
+			unlink($this->path.$key.'.sharekey');
+		}
+		$this->sharekey = null;
+	}
+
+	public function createSharekey() {
+		// Remove old sharekey, if present
+		$this->removeSharekey();
+
+		// Create a new .sharekey file with a random name
+		$key = md5(rand().time());
+		$keyfile = $this->path.$key.'.sharekey';
+		file_put_contents($keyfile, time());
+		setFileMode($keyfile);
+
+		$this->sharekey = $key;
+		return $this->sharekey;
 	}
 
 	public function getNode($name) {
