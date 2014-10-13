@@ -133,9 +133,7 @@ p {
 }
 
 .header span {
-	background: #fff;
-	border-radius: 40px;
-	padding: 10px 10px;
+	padding: 10px 80px;
 }
 
 button {
@@ -158,10 +156,11 @@ img {
 	height: 58px;
 	top:0;
 	text-align: center;
-	color: #EC3F1E;
+	color: #fff;
 	z-index: 1000;
-	font: 24px/38px "AvenirNext-Medium", "Lucida Grande", Lucida, Verdana, sans-serif;
+	font: 24px/38px "AvenirNext-Regular", "Lucida Grande", Lucida, Verdana, sans-serif;
 	padding-top: 12px;
+	background: #F1734B;
 }
 
 
@@ -512,38 +511,42 @@ button {
 }
 
 #shareProject {
-	background: transparent url('../img/unshared.svg') top left no-repeat;
+	background: transparent url('../img/unshared.svg') bottom left no-repeat;
 	float: right;
-	height: 26px;
-	width: 22px;
-	padding: 4px 0 8px 32px;
+	height: 18px;
+	width: 14px;
+	padding: 7px 0 20px 32px;
 	overflow: hidden;
 	display: block;
-	-webkit-transition: width .25s ease-in-out;
+	-webkit-transition: width .15s ease-in-out;
 	white-space: nowrap;
-	
+	color: #fff;
 }
 
+
+
+
 #shareProject:hover {
-	background: transparent url('../img/shared.svg') top left no-repeat;
+	background: transparent url('../img/shared.svg') bottom left no-repeat;
 	width: 220px;
 }
 
 #unshareProject {
-	background: transparent url('../img/shared.svg') top left no-repeat;
+	background: transparent url('../img/shared.svg') bottom left no-repeat;
 	float: right;
-	height: 26px;
-	width: 22px;
-	padding: 4px 0 8px 32px;
+	height: 18px;
+	width: 14px;
+	padding: 7px 0 20px 32px;
 	overflow: hidden;
 	display: block;
 	-webkit-transition: width .25s ease-in-out;
 	white-space: nowrap;
+	color: #fff;
 	
 }
 
 #unshareProject:hover {
-	background: transparent url('../img/unshared.svg') top left no-repeat;
+	background: transparent url('../img/unshared.svg') bottom left no-repeat;
 	width: 100px;
 	
 }
@@ -551,7 +554,13 @@ button {
 
 .publicUrl {
 	float: right;
-	padding: 4px 0 8px 18px;
+	padding: 7px 0 8px 0px;
+	color: #fff;
+	text-decoration: underline;
+}
+
+.publicUrl a:link, .publicUrl a:hover, .publicUrl a:visited {
+	color: #777575;	
 }
 
 #logout {

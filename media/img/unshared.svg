@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="22px" height="26px" viewBox="0 0 22 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="14px" height="17px" viewBox="0 0 14 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
-    <title>private</title>
+    <title>unshared</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-16.000000, -13.000000)">
-            <g id="private" sketch:type="MSLayerGroup" transform="translate(16.000000, 13.000000)">
-                <rect id="Rectangle-2" fill="#F1734B" sketch:type="MSShapeGroup" x="3" y="0" width="16" height="26" rx="8"></rect>
-                <rect id="Rectangle-3" fill="#FFFFFF" sketch:type="MSShapeGroup" x="6" y="3" width="10" height="17" rx="8"></rect>
-                <rect id="Rectangle-1" fill="#F1734B" sketch:type="MSShapeGroup" x="0" y="12" width="22" height="14"></rect>
-            </g>
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-79.000000, -4.000000)" fill="#FFFFFF">
+            <path d="M80.9090909,11.8461538 L80.9090909,9.10056055 C80.9090909,6.27505588 83.1883685,4 86,4 C88.8059103,4 91.0909091,6.28359874 91.0909091,9.10056055 L91.0909091,11.8461538 L93,11.8461538 L93,21 L79,21 L79,11.8461538 L80.9090909,11.8461538 Z M82.8181818,11.8461538 L82.8181818,9.14676157 C82.8181818,7.39192518 84.2427303,5.96153846 86,5.96153846 C87.753694,5.96153846 89.1818182,7.38761142 89.1818182,9.14676157 L89.1818182,11.8461538 L82.8181818,11.8461538 Z" id="unshared" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

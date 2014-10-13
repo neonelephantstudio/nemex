@@ -7,12 +7,12 @@
 
 <div id="editmenu"></div>
 <div class="navigation">
-	<a class="index" href="?"><img src="media/img/nemex.svg" /></a>
+	<a class="index" href="?"><img src="media/img/back.svg" /></a>
 	<span class="share_project">	
 		<?php if($project->isShared()) {?>
 			
 			<a class="publicUrl" href="?<?php p($project->getName().'&'.$project->getSharekey());?>">
-				public url
+				share this url
 			</a>
 			<a href="#" id="unshareProject">unshare</a>
 		<?php } else { ?>
