@@ -1,6 +1,6 @@
 <?php
 
-define( 'NX_PATH', realpath('./').'/' );
+define( 'NX_PATH', __DIR__ . '/' );
 
 require_once(NX_PATH.'config.php');
 require_once(NX_PATH.'lib/session.php');
