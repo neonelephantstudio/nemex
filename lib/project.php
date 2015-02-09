@@ -172,9 +172,10 @@ class Project {
 		foreach( saneGlob(CONFIG::PROJECTS_PATH.'*', GLOB_ONLYDIR) as $dir ) {
 			$project = self::open( basename($dir) );
 			if( $project ) { // Make sure the project could be opened
-				$projects[] = $project;
+				$projects[filemtime($dir)] = $project;
 			}
 		}
+		krsort($projects);
 		return $projects;
 	}
 }
