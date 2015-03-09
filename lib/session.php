@@ -21,7 +21,7 @@ class Session {
 	public function login($loginName, $loginPass) {
 		if(
 			$loginName === $this->userName && 
-			$loginPass === $this->userPass 
+			sha1($loginPass) === $this->userPass 
 		) {
 			$_SESSION[$this->sessionName] = $this->instanceId;
 		}
